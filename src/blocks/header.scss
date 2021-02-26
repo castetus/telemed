@@ -1,0 +1,22 @@
+@import '../scss/variables.scss';
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__menu-button{
+    width: 45px;
+    height: 43px;
+    position: absolute;
+    bottom: 32px;
+    right: 8px;
+    border: 2px solid $color-orange;
+    border-radius: 2px;
+    background: url('img/icons/menu.svg') center no-repeat;
+    background-size: 45%;
+  }
+  @media screen and(min-width: $tablets) {
+    justify-content: space-between;
+  }
+}

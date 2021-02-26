@@ -1,0 +1,9 @@
+nav.menu 
+  .menu__header 
+    img.menu__logo(src="img/logo.svg")
+    button.menu__button.btn_close
+  ul.menu__list
+    each val, key in {'ПОЛУЧЕНИЕ ДОСТУПА': '#', 'ПРЕИМУЩЕСТВА ОНЛАЙН': '#', 'КАЛЬКУЛЯТОР ПОЛИСА': '#', 'ВОЗМОЖНОСТИ ПРОГРАММЫ': '#', 'ДОСТУПНЫЕ СПЕЦИАЛИСТЫ': '#', 'КАК ЭТО РАБОТАЕТ': '#', 'ФОРМА ЗАЯВКИ': '#'}
+      li.menu__item 
+        a.link.menu__link(href=val)= key
+  

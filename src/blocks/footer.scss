@@ -1,0 +1,22 @@
+@import '../scss/variables.scss';
+.footer{
+  background-color: $color-pink;
+  &__wrapper{
+    width: 100%;
+    padding: 28px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__menu{
+    list-style-type: none;
+    padding-left: 0px;
+    align-self: start;
+  }
+  &__menu-item{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    color: $color-grey;
+  }
+}

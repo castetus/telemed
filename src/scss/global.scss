@@ -1,0 +1,144 @@
+@import 'variables.scss';
+@import "../scss/variables";
+@font-face {
+  font-family: Days;
+  src: url('fonts/days_sans_black.otf');
+}
+@font-face {
+  font-family: Comfortaa;
+  src: url('fonts/Comfortaa-Regular.ttf');
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: MontserratBold;
+  src: url('fonts/Montserrat-Bold.ttf');
+}
+*{
+  font-family: Montserrat, Arial, sans-serif;
+}
+body{
+  margin: 0;
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    // padding: 0 15px;
+    &_adaptive{
+        flex-direction: column;
+        @media screen and (min-width: $tablets){
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        @media screen and (min-width: $desktop){
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+    &_padding{
+        padding: 0 15px;
+    }
+    &_reverse{
+        flex-direction: column-reverse;
+        @media screen and (min-width: $tablets){
+            flex-direction: row;
+        }
+    }
+    &_no-wrap{
+        @media screen and (min-width: $tablets){
+            flex-wrap: nowrap;
+        }
+    }
+    &_full-width{
+        width: 100%;
+    }
+    @media screen and (min-width: 576px){
+        // width: 540px;
+    }
+    @media screen and (min-width: $tablets){
+        // width: 720px;
+        padding: 0 30px;
+    }
+    @media screen and (min-width: 992px){
+        // width: 960px;
+        padding: 0 30px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 1200px;
+        padding: 0 30px;
+        flex-direction: row;
+    }
+}
+.btn{
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  border-radius: 11px;
+  text-transform: uppercase;
+  display: block;
+  width: 256px;
+  padding: 17px 0 13px;
+  color: #fff;
+  cursor: pointer;
+  &_outlined{
+    color: $color-grey;
+    border: 3px solid $color-grey;
+    &:hover{
+      background-color: $color-grey;
+      color: #fff;
+    }
+  }
+  &_orange{
+    background-color: $color-orange;
+    border: 3px solid $color-orange;
+    &:hover{
+      background-color: #fff;
+      color: $color-orange;
+    }
+  }
+  &_green{
+    background-color: $color-green;
+    border: 3px solid $color-green;
+    &:hover{
+      background-color: #fff;
+      color: $color-green;
+    }
+  }
+  &_centered{
+    margin: 0 auto;
+  }
+  &_close{
+    background: url('img/icons/close.svg') center no-repeat;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+    border: none;
+    margin: 22px 16px;
+  }
+}
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+.link_underlined{
+  text-decoration: underline;
+}
+.heading{
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  &_orange{
+    color: $color-orange;
+  }
+  &_green{
+    color: $color-green;
+  }
+}

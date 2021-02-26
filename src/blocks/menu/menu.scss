@@ -1,0 +1,34 @@
+@import '../../scss/variables.scss';
+.menu{
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  &__logo{
+    width: 70%;
+  }
+  &__button{
+    float: right;
+  }
+  &__list{
+    list-style-type: none;
+    text-transform: uppercase;
+    color: $color-orange;
+    padding-left: 0px;
+    margin: 16px 0 0;
+  }
+  &__item{
+    border: 1px solid $color-light-grey;
+    border-bottom: none;
+    padding: 17px 0px 18px 21px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:last-child{
+      border-bottom: 1px solid $color-light-grey;
+    }
+  }
+  @media screen and (min-width: $tablets){
+    background-color: $color-pink;
+  }
+}
