@@ -1,0 +1,40 @@
+@import '../scss/variables.scss';
+.contacts{
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+  color: $color-green;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 16px;
+  &__item{
+    position: relative;
+    margin-bottom: 5px;
+    &_phone{
+      padding-left: 21px;
+      &:before{
+        content: '';
+        background: url('img/icons/call.svg') center no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 8px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+    &_insta{
+      padding-left: 14px;
+      &:before{
+        content: '';
+        background: url('img/icons/instagram.svg') center no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 19px;
+        top: 3px;
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+}

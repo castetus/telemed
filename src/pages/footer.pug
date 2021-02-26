@@ -1,0 +1,12 @@
+include contacts.pug
+include logo.pug
+footer.footer
+  .container 
+    .footer__wrapper
+      img.footer__logo(src="img/logo.svg", alt="")
+      ul.footer__menu
+        li.footer__menu-item 
+          a.footer__menu-link.link Политика конфиденциальности
+        li.footer__menu-item 
+          a.footer__menu-link.link Лицензия
+      +contacts

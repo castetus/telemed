@@ -1,0 +1,29 @@
+@import '../../scss/variables.scss';
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__field{
+    &_green{
+      border: 3px solid $color-green;
+      border-radius: 11px;
+      padding: 18px 0px 18px 24px;
+      margin-bottom: 16px;
+      &[placeholder]{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+    &[placeholder]{
+      color: $color-light-grey;
+    }
+  }
+  &__check{
+    color: $color-orange;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    margin-bottom: 16px;
+  }
+}

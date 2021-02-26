@@ -1,0 +1,263 @@
+.contacts {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+  color: #069E2D;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 16px; }
+  .contacts__item {
+    position: relative;
+    margin-bottom: 5px; }
+    .contacts__item_phone {
+      padding-left: 21px; }
+      .contacts__item_phone:before {
+        content: '';
+        background: url("img/icons/call.svg") center no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 8px;
+        width: 15px;
+        height: 15px; }
+    .contacts__item_insta {
+      padding-left: 14px; }
+      .contacts__item_insta:before {
+        content: '';
+        background: url("img/icons/instagram.svg") center no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 19px;
+        top: 3px;
+        width: 13px;
+        height: 13px; }
+
+.footer {
+  background-color: rgba(255, 102, 0, 0.1); }
+  .footer__wrapper {
+    width: 100%;
+    padding: 28px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .footer__menu {
+    list-style-type: none;
+    padding-left: 0px;
+    align-self: start; }
+  .footer__menu-item {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    color: #4B4955; }
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .header__menu-button {
+    width: 45px;
+    height: 43px;
+    position: absolute;
+    bottom: 32px;
+    right: 8px;
+    border: 2px solid #FF6600;
+    border-radius: 2px;
+    background: url("img/icons/menu.svg") center no-repeat;
+    background-size: 45%; }
+  @media screen and (min-width: 767px) {
+    .header {
+      justify-content: space-between; } }
+
+.logo {
+  margin-bottom: 5px; }
+  .logo__img {
+    width: 96px;
+    float: left; }
+  .logo__title {
+    display: block;
+    text-transform: uppercase;
+    color: #FF6600;
+    font-family: Days;
+    font-size: 23px;
+    margin-top: 14px; }
+  .logo__text {
+    display: block;
+    text-transform: uppercase;
+    color: #069E2D;
+    font-size: 8px;
+    white-space: nowrap;
+    margin-top: 5px; }
+
+@font-face {
+  font-family: Days;
+  src: url("fonts/days_sans_black.otf"); }
+
+@font-face {
+  font-family: Comfortaa;
+  src: url("fonts/Comfortaa-Regular.ttf"); }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/Montserrat-Regular.ttf"); }
+
+@font-face {
+  font-family: MontserratBold;
+  src: url("fonts/Montserrat-Bold.ttf"); }
+
+* {
+  font-family: Montserrat, Arial, sans-serif; }
+
+body {
+  margin: 0; }
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 100%; }
+  .container_adaptive {
+    flex-direction: column; }
+    @media screen and (min-width: 767px) {
+      .container_adaptive {
+        flex-direction: row;
+        flex-wrap: wrap; } }
+    @media screen and (min-width: 1024px) {
+      .container_adaptive {
+        flex-direction: row;
+        flex-wrap: nowrap; } }
+  .container_padding {
+    padding: 0 15px; }
+  .container_reverse {
+    flex-direction: column-reverse; }
+    @media screen and (min-width: 767px) {
+      .container_reverse {
+        flex-direction: row; } }
+  @media screen and (min-width: 767px) {
+    .container_no-wrap {
+      flex-wrap: nowrap; } }
+  .container_full-width {
+    width: 100%; }
+  @media screen and (min-width: 767px) {
+    .container {
+      padding: 0 30px; } }
+  @media screen and (min-width: 992px) {
+    .container {
+      padding: 0 30px; } }
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+      padding: 0 30px;
+      flex-direction: row; } }
+
+.btn {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  border-radius: 11px;
+  text-transform: uppercase;
+  display: block;
+  width: 256px;
+  padding: 17px 0 13px;
+  color: #fff;
+  cursor: pointer; }
+  .btn_outlined {
+    color: #4B4955;
+    border: 3px solid #4B4955; }
+    .btn_outlined:hover {
+      background-color: #4B4955;
+      color: #fff; }
+  .btn_orange {
+    background-color: #FF6600;
+    border: 3px solid #FF6600; }
+    .btn_orange:hover {
+      background-color: #fff;
+      color: #FF6600; }
+  .btn_green {
+    background-color: #069E2D;
+    border: 3px solid #069E2D; }
+    .btn_green:hover {
+      background-color: #fff;
+      color: #069E2D; }
+  .btn_centered {
+    margin: 0 auto; }
+  .btn_close {
+    background: url("img/icons/close.svg") center no-repeat;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+    border: none;
+    margin: 22px 16px; }
+
+.link {
+  color: inherit;
+  text-decoration: none; }
+
+.link_underlined {
+  text-decoration: underline; }
+
+.heading {
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%; }
+  .heading_orange {
+    color: #FF6600; }
+  .heading_green {
+    color: #069E2D; }
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .form__field_green {
+    border: 3px solid #069E2D;
+    border-radius: 11px;
+    padding: 18px 0px 18px 24px;
+    margin-bottom: 16px; }
+    .form__field_green[placeholder] {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px; }
+  .form__field[placeholder] {
+    color: #C4C4C4; }
+  .form__check {
+    color: #FF6600;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    margin-bottom: 16px; }
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #fff; }
+  .menu__logo {
+    width: 70%; }
+  .menu__button {
+    float: right; }
+  .menu__list {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: #FF6600;
+    padding-left: 0px;
+    margin: 16px 0 0; }
+  .menu__item {
+    border: 1px solid #C4C4C4;
+    border-bottom: none;
+    padding: 17px 0px 18px 21px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .menu__item:last-child {
+      border-bottom: 1px solid #C4C4C4; }
+  @media screen and (min-width: 767px) {
+    .menu {
+      background-color: rgba(255, 102, 0, 0.1); } }
