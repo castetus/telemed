@@ -1,0 +1,111 @@
+@import '../../scss/variables.scss';
+.stages{
+  margin-bottom: -40px;
+  &__captions{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  &__caption{
+    height: 112px;
+    width: 90%;
+    color: $color-orange;
+    display: none;
+    &_1{
+      background: url('img/caption_1.svg') center no-repeat;
+      background-size: contain;
+      @media screen and (min-width: $desktop){
+        margin-right: -31px;
+      }
+      
+      &_active{
+        background: url('img/caption_1_1.svg') center no-repeat;
+        color: #fff;
+        background-size: contain;
+        display: block;
+      }
+    }
+    &_2{
+      background: url('img/caption_2.svg') center no-repeat;
+      background-size: contain;
+      &_active{
+        background: url('img/caption_2_1.svg') center no-repeat;
+        color: #fff;
+        background-size: contain;
+        display: block;
+      }
+    }
+    &_3{
+      background: url('img/caption_3.svg') center no-repeat;
+      background-size: contain;
+      @media screen and (min-width: $desktop){
+        margin-left: -47px;
+      }
+      
+      &_active{
+        background: url('img/caption_3_1.svg') center no-repeat;
+        color: #fff;
+        background-size: contain;
+        display: block;
+      }
+    }
+    @media screen and (min-width: $desktop){
+      display: block;
+      width: 36%;
+    }
+  }
+  &__caption-content{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    margin: 20px auto;
+    text-transform: uppercase;
+  }
+  &__caption-number{
+    font-size: 36px;
+  }
+  &__item{
+    display: block;
+    @media screen and (min-width: $desktop){
+      display: flex;
+    }
+  }
+  &__item-wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+    @media screen and (min-width: $desktop){
+      flex: 1 0 70%;
+    }
+  }
+  &__title{
+    text-align: left;
+    font-weight: 700;
+    color: $color-grey;
+    font-size: 14px;
+    @media screen and (min-width: $tablets) {
+      font-size: 36px;
+    }
+  }
+  &__text{
+    text-align: left;
+    color: $color-grey;
+    font-size: 12px;
+    @media screen and (min-width: $tablets){
+      font-size: 24px;
+      margin-bottom: 45px;
+    }
+  }
+  &__img{
+    width: 143px;
+    float: right;
+    @media screen and (min-width: $desktop){
+      flex: 1 0 30%;
+    }
+  }
+  &__nav{
+    @media screen and (min-width: $desktop){
+      display: none;
+    }
+  }
+}

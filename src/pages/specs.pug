@@ -1,0 +1,18 @@
+.block_pink#specs
+  .container 
+    h2.heading.heading_green доступные специалисты
+    .specs.swiper-container 
+      .swiper-wrapper 
+        -let specs = {1: 'терапевт/педиатр', 2: 'психолог', 3: 'аллерголог-иммунолог', 4: 'гастроэнтеролог', 5: 'гинеколог', 6: 'дерматолог', 7: 'кардиолог', 8: 'лор', 9: 'невролог', 10: 'ортопед', 11: 'травматолог', 12: 'уролог', 13: 'эндокринолог'}
+        each val, index in specs
+          .specs__item.swiper-slide 
+            -let path = 'img/specs_' + index + '.jpg'
+              img.specs__img(src=path, alt="")
+              h3.specs__title= val
+            if index === 1
+              p.specs__text Ответ в течение 1,5 минут
+            else 
+              p.specs__text Ответ в течение  нескольких часов или на следующий день
+      .slider-button-next
+      .slider-button-prev
+    a.btn.btn_centered.btn_orange заказать полис

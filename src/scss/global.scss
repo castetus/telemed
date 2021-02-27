@@ -13,11 +13,18 @@
   src: url('fonts/Montserrat-Regular.ttf');
 }
 @font-face {
-  font-family: MontserratBold;
+  font-family: Montserrat;
+  src: url('fonts/Montserrat-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: Montserrat;
   src: url('fonts/Montserrat-Bold.ttf');
+  font-weight: 700;
 }
 *{
   font-family: Montserrat, Arial, sans-serif;
+  box-sizing: border-box;
 }
 body{
   margin: 0;
@@ -27,7 +34,8 @@ body{
     margin: 0 auto;
     flex-wrap: wrap;
     width: 100%;
-    // padding: 0 15px;
+    padding: 0 7px;
+    box-sizing: border-box;
     &_adaptive{
         flex-direction: column;
         @media screen and (min-width: $tablets){
@@ -55,6 +63,16 @@ body{
     }
     &_full-width{
         width: 100%;
+    }
+    &_absolute{
+      position: absolute;
+      min-height: 500px;
+      top: 0;
+      left: 0;
+      padding: 0 43px;
+      @media screen and (min-width: 1200px){
+        left: calc(50% - 600px);
+      }
     }
     @media screen and (min-width: 576px){
         // width: 540px;

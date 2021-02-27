@@ -1,0 +1,42 @@
+.block_white#stages
+  .container 
+    h2.heading.heading_green этапы получения доступа
+    .stages.swiper-container
+      .slider-button-next.stages__nav#stages-next
+      .slider-button-prev.stages__nav#stages-prev
+      .stages__captions 
+        .stages__caption.stages__caption_1.stages__caption_1_active
+          .stages__caption-content 
+            span.stages__caption-number 1 
+            br
+            | купить полис
+        .stages__caption.stages__caption_2
+          .stages__caption-content 
+            span.stages__caption-number  2 
+            br
+            | пройти регистрацию
+        .stages__caption.stages__caption_3
+          .stages__caption-content 
+            span.stages__caption-number  3 
+            br
+            | получить консультации
+      .swiper-wrapper
+        .stages__item.swiper-slide.stages__item_active
+          .stages__item-wrapper
+            h3.stages__title доступ оформляется онлайн за 5 минут
+            p.stages__text Полис придет на вашу электронную почту. Он начнет действовать в течение 3 суток с момента покупки и будет активен 12 месяцев.
+            a.btn.btn_green.stages__button заказать полис
+          img.stages__img(src="img/stages_1.png", alt="")
+        .stages__item.swiper-slide
+          .stages__item-wrapper
+            h3.stages__title регистрация на сайте или в приложении доктор рядом
+            p.stages__text Пройдите регистрацию на сайте или в приложении «Доктор рядом Телемед». При регистрации необходимо указать данные человека, на которого оформлен полис.
+            a.btn.btn_green.stages__button заказать полис
+          img.stages__img(src="img/stages_2.png", alt="")
+        .stages__item.swiper-slide 
+          .stages__item-wrapper
+            h3.stages__title в любое время — нужен только телефон или доступ в интернет
+            p.stages__text Полис дает возможность получить неограниченное количество консультаций в любое время. Прочитать, как проводится консультации, можно в разделе 
+              a.link.link_underlined(href="#faq") Частые вопросы
+            a.btn.btn_green.stages__button заказать полис
+          img.stages__img(src="img/stages_3.png", alt="")

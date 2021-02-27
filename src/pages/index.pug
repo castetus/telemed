@@ -5,13 +5,23 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
+    script(src="js/main.js") 
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
     link(rel="stylesheet", href="style.css")
+    link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
     title Telemed
-  body 
-
-        include header.pug
-        include menu.pug
-        include main-slider.pug
-        .container 
-          +form('получить консультацию')
-        include footer.pug
+  body
+    include header.pug
+    include menu.pug
+    include main-slider.pug
+    include stages.pug 
+    include usp.pug
+    +form('получить консультацию')
+    include big-form.pug
+    include opps.pug
+    include specs.pug
+    include howto.pug
+    include faq.pug
+    include footer.pug
+    .mask#mask
