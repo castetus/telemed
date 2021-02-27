@@ -1,0 +1,63 @@
+@import '../../scss/variables.scss';
+.main-slider{
+  margin-bottom: 16px;
+  &__slide{
+    position: relative;
+  }
+  &__picture{
+    position: relative;
+  }
+  &__img{
+    width: 100%;
+  }
+  &__text{
+    position: absolute;
+    top: 23px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    // &_grey{
+    //   @media screen and (min-width: $desktop){
+    //     color: $color-grey;
+    //   }
+    // }
+    @media screen and (min-width: $mobile) {
+      top: 0;
+      left: 43px;
+      width: 50%;
+      max-width: 465px;
+      font-size: 32px;
+    }
+    @media screen and (min-width: $desktop){
+      top: 86px;
+    }
+  }
+  &__mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+  }
+  &__button{
+    display: none;
+    position: absolute;
+    bottom: 81px;
+    @media screen and (min-width: $desktop){
+      left: 43px;
+      display: block;
+    }
+  }
+  &__bottom-btn{
+    @media screen and (min-width: $desktop){
+      display: none;
+    }
+  }
+  &__prev{
+    left: 13px!important;
+  }
+  &__next{
+    right: 13px!important;
+  }
+}

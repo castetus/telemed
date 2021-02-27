@@ -4,31 +4,82 @@
   position: absolute;
   top: 0;
   background-color: #fff;
+  transition: all 0.4s linear;
+  z-index: 2000;
+  &__header{
+    width: 100%;
+    @media screen and (min-width: $tablets){
+      display: none;
+    }
+  }
   &__logo{
-    width: 70%;
+    width: 233px;
   }
   &__button{
     float: right;
   }
   &__list{
+    width: 100%;
     list-style-type: none;
-    text-transform: uppercase;
-    color: $color-orange;
     padding-left: 0px;
-    margin: 16px 0 0;
+    margin: 16px 0 7px;
+    @media screen and (min-width: $tablets){
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__item{
     border: 1px solid $color-light-grey;
+    color: $color-orange;
     border-bottom: none;
     padding: 17px 0px 18px 21px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     &:last-child{
       border-bottom: 1px solid $color-light-grey;
+      @media screen and (min-width: $tablets){
+        border: none;
+      }
+    }
+    @media screen and (min-width: $tablets){
+      margin-top: -15px;
+      border: none;
+      font-size: 12px;
+      color: $color-grey;
+      width: 80px;
     }
   }
+  &_visible{
+    right: 0;
+    animation: menuAnimation 0.4s linear forwards;
+  }
+  &_hidden{
+    animation: menuAnimationReverse 0.4s linear forwards;
+  }
   @media screen and (min-width: $tablets){
+    position: static;
     background-color: $color-pink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 86px;
+  }
+}
+
+@keyframes menuAnimation{
+  0%{
+    right: -335px;
+  }
+  100%{
+    right: 0px;
+  }
+}
+@keyframes menuAnimationReverse{
+  0%{
+    right: 0px;
+  }
+  100%{
+    right: -335px;
   }
 }

@@ -1,3 +1,48 @@
 .slider 
   .container_full-width
-  a.btn.btn_centered.btn_orange заказать полис
+    .main-slider.swiper-container#main-slider
+      .swiper-wrapper
+        .main-slider__slide.swiper-slide
+          picture.main-slider__picture
+            source(srcset="img/banner_1.jpg" media="(min-width: 575px)")
+            img.main-slider__img(src="img/banner_1_s.jpg", alt="")
+          .main-slider__mask
+          .container.container_absolute
+            .main-slider__text 
+              p Заболел ребенок или другой член семьи? 
+              p Врач на связи круглосуточно!
+            a.btn.btn_orange.main-slider__button заказать полис
+        .main-slider__slide.swiper-slide
+          picture.main-slider__picture
+            source(srcset="img/banner_2.jpg" media="(min-width: 575px)")
+            img.main-slider__img(src="img/banner_2_s.jpg", alt="")
+          .main-slider__mask
+          .container.container_absolute
+            .main-slider__text 
+              p Чувствуете себя плохо, но не хотите идти в поликлинику?
+              p Врач на связи круглосуточно!
+            a.btn.btn_centered.btn_orange.main-slider__button заказать полис
+        .main-slider__slide.swiper-slide
+          picture.main-slider__picture
+            source(srcset="img/banner_3.jpg" media="(min-width: 575px)")
+            img.main-slider__img(src="img/banner_3_s.jpg", alt="")
+          .main-slider__mask
+          .container.container_absolute
+            .main-slider__text.main-slider__text_grey
+              p Заболел ребенок или другой член семьи?
+              p Врач на связи круглосуточно!
+            a.btn.btn_centered.btn_orange.main-slider__button заказать полис
+        .main-slider__slide.swiper-slide
+          picture.main-slider__picture
+            source(srcset="img/banner_4.jpg" media="(min-width: 575px)")
+            img.main-slider__img(src="img/banner_4_s.jpg", alt="")
+          .main-slider__mask
+          .container.container_absolute
+            .main-slider__text.main-slider__text_grey
+              p Необходимо второе мнение специалиста по сложному вопросу?
+              p Врач на связи круглосуточно!
+            a.btn.btn_centered.btn_orange.main-slider__button заказать полис
+      .swiper-pagination
+      .slider-button-prev.main-slider__prev
+      .slider-button-next.main-slider__next
+    a.btn.btn_centered.btn_orange.main-slider__bottom-btn заказать полис

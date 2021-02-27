@@ -1,12 +1,14 @@
 mixin form(title)
-  h2.heading.heading_orange= title
-  form.form(action="")
-    input.form__field.form__field_green(type="text" placeholder="ваше имя")
-    input.form__field.form__field_green(type="text" placeholder="телефон для связи")
-    
-    label.form__check(for="checkbox")
-      input.form__checkbox(type="checkbox" name="checkbox")
-      span Согласие на 
-        a.link.link_underlined(href="#") обработку персональных данных
-      
-    input.btn.btn_green.btn_centered(type="submit" value="отправить")   
+  .block_white
+    .container
+      h2.heading.heading_orange= title
+      form.form(action="")
+        input.form__field.form__field_green(type="text" placeholder="ваше имя")
+        input.form__field.form__field_green(type="text" placeholder="телефон для связи")
+        
+        label.form__check(for="checkbox")
+          input.form__checkbox(type="checkbox" name="checkbox")
+          span Согласие на 
+            a.link.link_underlined(href="#") обработку персональных данных
+          
+        input.btn.btn_green.btn_centered(type="submit" value="отправить")   

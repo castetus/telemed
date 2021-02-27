@@ -1,0 +1,38 @@
+.slider-button-next, .slider-button-prev{
+  width: 14px;
+  height: 31px;
+  position: absolute;
+  top: calc(50% - 15px);
+  z-index: 1000;
+}
+.slider-button-next{
+  background: url('img/icons/arrow_right.svg') center no-repeat;
+  background-size: contain;
+  right: 0px;
+}
+.slider-button-prev{
+  background: url('img/icons/arrow_left.svg') center no-repeat;
+  background-size: contain;
+  left: 0px;
+}
+.bullet{
+  position: relative;
+  background-color: #fff;
+  opacity: 1;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+}
+.bullet_active{
+  &:before{
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -5px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 21px;
+    height: 21px;
+  }
+}

@@ -7,6 +7,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: $tablets) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__logo{
+    max-width: 233px;
   }
   &__menu{
     list-style-type: none;

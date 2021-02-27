@@ -18,7 +18,7 @@
         background: url('img/icons/call.svg') center no-repeat;
         background-size: contain;
         position: absolute;
-        left: 8px;
+        left: 2px;
         width: 15px;
         height: 15px;
       }
@@ -30,11 +30,15 @@
         background: url('img/icons/instagram.svg') center no-repeat;
         background-size: contain;
         position: absolute;
-        left: 19px;
+        left: 65px;
         top: 3px;
         width: 13px;
         height: 13px;
       }
     }
+  }
+  @media screen and (min-width: $tablets) {
+    text-align: right;
+    margin-left: 108px;
   }
 }

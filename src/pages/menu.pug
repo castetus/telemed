@@ -1,9 +1,10 @@
-nav.menu 
-  .menu__header 
-    img.menu__logo(src="img/logo.svg")
-    button.menu__button.btn_close
-  ul.menu__list
-    each val, key in {'ПОЛУЧЕНИЕ ДОСТУПА': '#', 'ПРЕИМУЩЕСТВА ОНЛАЙН': '#', 'КАЛЬКУЛЯТОР ПОЛИСА': '#', 'ВОЗМОЖНОСТИ ПРОГРАММЫ': '#', 'ДОСТУПНЫЕ СПЕЦИАЛИСТЫ': '#', 'КАК ЭТО РАБОТАЕТ': '#', 'ФОРМА ЗАЯВКИ': '#'}
-      li.menu__item 
-        a.link.menu__link(href=val)= key
-  
+nav.menu#menu
+  .container
+    .menu__header 
+      img.menu__logo(src="img/logo.svg")
+      button.menu__button.btn_close#close-menu
+    ul.menu__list
+      each val, key in {'ПОЛУЧЕНИЕ ДОСТУПА': '#stages', 'ПРЕИМУЩЕСТВА ОНЛАЙН': '#usp', 'ВОЗМОЖНОСТИ ПРОГРАММЫ': '#opps', 'ДОСТУПНЫЕ СПЕЦИАЛИСТЫ': '#specs', 'КАК ЭТО РАБОТАЕТ': '#howto', 'ФОРМА ЗАЯВКИ': '#big-form'}
+        li.menu__item 
+          a.link.menu__link(href=val)= key
+    
