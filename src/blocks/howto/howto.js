@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', function(){
-  const howtoSlider = new Swiper('.howto', {
+  setTimeout(() => {
+    const howtoSlider = new Swiper('.howto', {
+    loop: true,
     navigation: {
       nextEl: '.slider-button-next',
       prevEl: '.slider-button-prev',
     },
   })
+  }, 1000);
 })

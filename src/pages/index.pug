@@ -1,4 +1,4 @@
-include form.pug
+include policy.pug
 doctype html
 html(lang="en")
   head
@@ -15,13 +15,29 @@ html(lang="en")
     include header.pug
     include menu.pug
     include main-slider.pug
-    include stages.pug 
-    include usp.pug
-    +form('получить консультацию')
-    include big-form.pug
+    include price.pug
     include opps.pug
+    include usp.pug
+    include form.pug
+    include stages.pug 
     include specs.pug
     include howto.pug
+    include big-form.pug
     include faq.pug
     include footer.pug
     .mask#mask
+    .scroller#scroller
+    .popup#popup-form
+      .btn.btn_close#popup-close
+      +form('получить консультацию')
+    .popup#thankyou
+      .btn.btn_close#popup-close
+      .text-wrapper
+        p.text_center Спасибо за заполнение формы! Мы свяжемся с Вами в ближайшее время!
+    .popup#policy 
+      .btn.btn_close#popup-close
+      +policy
+    .popup#licence 
+      .btn.btn_close#popup-close
+      include licence.pug
+    script(src="js/mango.js")

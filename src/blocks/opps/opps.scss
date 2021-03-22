@@ -26,13 +26,18 @@
   }
   &__text{
     margin: 1em 8px;
+    font-size: 14px;
+    @media screen and (min-width: $tablets){
+      font-size: 24px;
+    }
   }
   &__icon-wrapper{
     display: flex;
-    flex: 1 0 24%;
+    flex: 1 0 16%;
     justify-content: center;
   }
   &__nav-button{
+    top: calc(50% - 35px)!important;
     @media screen and (min-width: $tablets){
       display: none;
     }

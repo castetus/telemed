@@ -10,8 +10,9 @@
     @media screen and (min-width: $desktop) {
       font-size: 14px;
     }
-  }
+  } 
   &__title{
+    cursor: pointer;
     position: relative;
     padding: 25px 40px 26px 31px;
     border: 1px solid $color-light-grey;

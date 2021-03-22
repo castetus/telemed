@@ -1,0 +1,48 @@
+@import '../../scss/variables.scss';
+.howto{
+  &__test{
+    height: 400px;
+  }
+  &__slide{
+    position: relative;
+  }
+  &__picture{
+    position: relative;
+  }
+  &__img{
+    width: 100%;
+  }
+  &__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    @media screen and (min-width: $tablets) {
+      flex-direction: row;
+      height: 50px;
+      bottom: 5%;
+    }
+  }
+  &__link{
+    min-height: 45px;
+    &_appstore{
+      background: url('img/apple.png') center no-repeat;
+      background-size: contain;
+      width: 134px;
+    }
+    &_google{
+      background: url('img/google.png') center no-repeat;
+      background-size: contain;
+      width: 134px;
+    }
+    &_doctor{
+      background: url('img/doctor.png') center no-repeat;
+      background-size: contain;
+      width: 134px;
+    }
+  }
+}

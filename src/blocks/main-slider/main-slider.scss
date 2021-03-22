@@ -1,6 +1,7 @@
 @import '../../scss/variables.scss';
 .main-slider{
   margin-bottom: 16px;
+  max-height: 460px;
   &__slide{
     position: relative;
   }

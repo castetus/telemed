@@ -1,16 +1,18 @@
 .block_white#howto
   .container 
     h2.heading.heading_green как это работает
-    .swiper-container.howto 
+    .swiper-container.howto
       .swiper-wrapper 
-        img.swiper-slide.howto__img(src="img/Screenshot_1.jpg", alt="")
-        img.swiper-slide.howto__img(src="img/Screenshot_2.jpg", alt="")
-        img.swiper-slide.howto__img(src="img/Screenshot_3.jpg", alt="")
-        //- img.swiper-slide.howto__img(src="img/Screenshot_4.jpg", alt="")
-        //- img.swiper-slide.howto__img(src="img/Screenshot_5.jpg", alt="")
-        img.swiper-slide.howto__img(src="img/Screenshot_6.jpg", alt="")
-        img.swiper-slide.howto__img(src="img/Screenshot_7.jpg", alt="")
-        img.swiper-slide.howto__img(src="img/Screenshot_8.jpg", alt="")
-        img.swiper-slide.howto__img(src="img/Screenshot_9.jpg", alt="")
+          - for (var i = 1; i <= 6; i++)
+            .howto__slide.swiper-slide
+              picture.howto__picture
+                source(srcset="img/howto_s_" + i +".jpg" media="(max-width: 767px)")
+                source(srcset="img/howto_" + i +".jpg" media="(min-width: 768px)")
+                img.howto__img(src="img/howto_s_" + i +".jpg", alt="")
+              if (i == 1)
+                .howto__links
+                  a.howto__link.howto__link_appstore(href="https://apps.apple.com/us/app/%D0%B4%D0%BE%D0%BA%D1%82%D0%BE%D1%80-%D1%80%D1%8F%D0%B4%D0%BE%D0%BC-%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%D0%B5%D0%B4/id1293844621" target="blank")
+                  a.howto__link.howto__link_google(href="https://play.google.com/store/apps/details?id=ru.drclinics.telemed" target="blank")
+                  a.howto__link.howto__link_doctor(href="https://telemed.drclinics.ru/" target="blank")
       .slider-button-prev
       .slider-button-next

@@ -1,0 +1,11 @@
+@import '../scss/variables.scss';
+.price{
+  @media screen and (min-width: $tablets) {
+    margin: 35px 0;
+  }
+  &__text{
+    @media screen and (min-width: $tablets) {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="css/app.5754d0d3.css" rel="preload" as="style"><link href="js/app.75b8c8f2.js" rel="preload" as="script"><link href="js/chunk-vendors.1cfbd55d.js" rel="preload" as="script"><link href="css/app.5754d0d3.css" rel="stylesheet"><script src="js/chunk-vendors.1cfbd55d.js"></script><script src="js/app.75b8c8f2.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"> </script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Telemed</title>
+  </head>
+  <body>
+    <header> 
+      <div class="container"> 
+        <div class="header"> 
+              <div class="logo"> <img class="logo__img" src="img/logo.jpg"><span class="logo__title">телемед полис</span><span class="logo__text">ключ к вашему здоровью</span></div>
+          <h2 class="heading_green header__slogan">Консультируйтесь с <br>профессиональными врачами 24/7 <br>без ожидания и очередей!</h2>
+          <div class="header__cta"> <a class="btn btn_outlined btn_centered btn_popup" data-target="#popup-form">заказать полис</a></div>
+              <ul class="contacts"> 
+                <li class="contacts__item contacts__item_phone"><a class="link" href="tel:78009447129">8 (800) 944-71-29 </a></li>
+                <li class="contacts__item"><a class="link" href="mailto:key@med-tele.ru">key@med-tele.ru</a></li>
+                <li class="contacts__item contacts__item_insta"><a class="link" href="">meditel</a></li>
+              </ul>
+          <button class="header__menu-button" id="dropdown"></button>
+        </div>
+      </div>
+    </header>
+    <nav class="menu" id="menu">
+      <div class="container">
+        <div class="menu__header"> <img class="menu__logo" src="img/logo.svg">
+          <button class="menu__button btn_close" id="close-menu"></button>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item"> <a class="link menu__link" href="#stages">ПОЛУЧЕНИЕ ДОСТУПА</a></li>
+          <li class="menu__item"> <a class="link menu__link" href="#usp">ПРЕИМУЩЕСТВА ОНЛАЙН</a></li>
+          <li class="menu__item"> <a class="link menu__link" href="#opps">ВОЗМОЖНОСТИ ПРОГРАММЫ</a></li>
+          <li class="menu__item"> <a class="link menu__link" href="#specs">ДОСТУПНЫЕ СПЕЦИАЛИСТЫ</a></li>
+          <li class="menu__item"> <a class="link menu__link" href="#howto">КАК ЭТО РАБОТАЕТ</a></li>
+          <li class="menu__item"> <a class="link menu__link" href="#big-form">ФОРМА ЗАЯВКИ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="slider"> 
+      <div class="container_full-width">
+        <div class="main-slider swiper-container" id="main-slider">
+          <div class="swiper-wrapper">
+            <div class="main-slider__slide swiper-slide">
+              <picture class="main-slider__picture">
+                <source srcset="img/banner_1.jpg" media="(min-width: 575px)"><img class="main-slider__img" src="img/banner_1_s.jpg" alt="">
+              </picture>
+              <div class="main-slider__mask"></div>
+              <div class="container container_absolute">
+                <div class="main-slider__text"> 
+                  <p>Заболел ребенок или другой член семьи? </p>
+                  <p>Врач на связи круглосуточно!</p>
+                </div><a class="btn btn_orange main-slider__button btn_popup" data-target="#popup-form">заказать полис</a>
+              </div>
+            </div>
+            <div class="main-slider__slide swiper-slide">
+              <picture class="main-slider__picture">
+                <source srcset="img/banner_2.jpg" media="(min-width: 575px)"><img class="main-slider__img" src="img/banner_2_s.jpg" alt="">
+              </picture>
+              <div class="main-slider__mask"></div>
+              <div class="container container_absolute">
+                <div class="main-slider__text"> 
+                  <p>Чувствуете себя плохо, но не хотите идти в поликлинику?</p>
+                  <p>Врач на связи круглосуточно!</p>
+                </div><a class="btn btn_centered btn_orange main-slider__button btn_popup" data-target="#popup-form">заказать полис</a>
+              </div>
+            </div>
+            <div class="main-slider__slide swiper-slide">
+              <picture class="main-slider__picture">
+                <source srcset="img/banner_3.jpg" media="(min-width: 575px)"><img class="main-slider__img" src="img/banner_3_s.jpg" alt="">
+              </picture>
+              <div class="main-slider__mask"></div>
+              <div class="container container_absolute">
+                <div class="main-slider__text main-slider__text_grey">
+                  <p>Заболел ребенок или другой член семьи?</p>
+                  <p>Врач на связи круглосуточно!</p>
+                </div><a class="btn btn_centered btn_orange main-slider__button btn_popup" data-target="#popup-form">заказать полис</a>
+              </div>
+            </div>
+            <div class="main-slider__slide swiper-slide">
+              <picture class="main-slider__picture">
+                <source srcset="img/banner_4.jpg" media="(min-width: 575px)"><img class="main-slider__img" src="img/banner_4_s.jpg" alt="">
+              </picture>
+              <div class="main-slider__mask"></div>
+              <div class="container container_absolute">
+                <div class="main-slider__text main-slider__text_grey">
+                  <p>Необходимо второе мнение специалиста по сложному вопросу?</p>
+                  <p>Врач на связи круглосуточно!</p>
+                </div><a class="btn btn_centered btn_orange main-slider__button btn_popup" data-target="#popup-form">заказать полис</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="slider-button-prev main-slider__prev"></div>
+          <div class="slider-button-next main-slider__next"></div>
+        </div><a class="btn btn_centered btn_orange main-slider__bottom-btn btn_popup" data-target="#popup-form">заказать полис</a>
+      </div>
+    </div>
+    <div class="block_white"> 
+      <div class="container"> 
+        <h2 class="heading heading_orange">Выбирайте самый доступный ДМС от Телемед Полис для всей семьи</h2>
+        <div class="price">
+          <p class="price__text">Годовой доступ к бесплатным консультациям врачей для Вас и Ваших близких в приложении "Доктор Рядом" - за 2700 рублей!</p>
+          <p class="price__text">При заказе двух и более полисов цена за второй и последующие - 1800 рублей.</p>
+        </div>
+        <h3 class="heading heading_green">Телемед Полис - ключ к Вашему здоровью!</h3>
+      </div>
+    </div>
+    <div class="block_pink" id="opps">
+      <div class="container"> 
+        <h2 class="heading heading_orange">Возможности ПРОГРАММЫ</h2>
+        <div class="opps">
+          <div class="opps__slider swiper-container">
+            <div class="swiper-wrapper opps__wrapper">
+              <div class="opps__item swiper-slide">
+                <div class="opps__icon-wrapper"><img class="opps__icon" src="img/icons/opps_1.svg"></div>
+                <p class="opps__text">Получать срочные и плановые консультации врачей и перепроверки правильности диагноза, поставленного другими врачами</p>
+              </div>
+              <div class="opps__item swiper-slide">
+                <div class="opps__icon-wrapper"><img class="opps__icon" src="img/icons/opps_2.svg"></div>
+                <p class="opps__text">Просматривать анкетные данные врачей, их рейтинг, отзывы и расписание</p>
+              </div>
+              <div class="opps__item swiper-slide">
+                <div class="opps__icon-wrapper"><img class="opps__icon" src="img/icons/opps_3.svg"></div>
+                <p class="opps__text">Фотографировать собственные анализы, медицинскую карту и хранить фотографии в приложении</p>
+              </div>
+              <div class="opps__item swiper-slide">
+                <div class="opps__icon-wrapper"><img class="opps__icon" src="img/icons/opps_4.svg"></div>
+                <p class="opps__text">Просматривать историю консультаций и рекомендации врачей</p>
+              </div>
+            </div>
+            <div class="slider-button-next opps__nav-button"></div>
+            <div class="slider-button-prev opps__nav-button"></div>
+          </div>
+        </div><a class="btn btn_centered btn_orange btn_popup" href="big-form">заказать полис</a>
+      </div>
+    </div>
+    <div class="block_white" id="usp">
+      <div class="container"> 
+        <h2 class="heading heading_orange">преимущества доступа</h2>
+        <div class="usp swiper-container"> 
+          <div class="swiper-wrapper"> 
+            <div class="usp__item swiper-slide"><img class="usp__icon" src="img/icons/usp_1.svg">
+              <h3 class="usp__title">ТРИ ВАРИАНТа СВЯзИ</h3>
+              <p class="usp__text">Консультации можно провести в чате, по телефону или видеосвязи</p>
+            </div>
+            <div class="usp__item swiper-slide"><img class="usp__icon" src="img/icons/usp_2.svg">
+              <h3 class="usp__title">
+                 разовый<br>платеж</h3>
+              <p class="usp__text">Количество обращений не ограничено</p>
+            </div>
+            <div class="usp__item swiper-slide"><img class="usp__icon" src="img/icons/usp_3.svg">
+              <h3 class="usp__title">В ЛЮБОЕ ВРЕМЯ НА СВЯЗИ</h3>
+              <p class="usp__text">Дежурные врачи на связи круглосуточно</p>
+            </div>
+            <div class="usp__item swiper-slide"><img class="usp__icon" src="img/icons/usp_4.svg">
+              <h3 class="usp__title">ВРАЧИ ВСЕХ СПЕЦИАЛЬНОСТЕЙ</h3>
+              <p class="usp__text">10 педиатров и 30 взрослых специалистов</p>
+            </div>
+          </div>
+          <div class="slider-button-next"></div>
+          <div class="slider-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <div class="block_pink"> 
+      <div class="container"> 
+            <h2 class="heading heading_orange">получить консультацию</h2>
+            <form class="form" action="">
+              <div class="form__field-block">
+                <label class="form__label" for="name">Ваше имя</label>
+                <input class="form__field_required form__field form__field_green" type="text" name="name" placeholder="Иванов Иван Иванович">
+              </div>
+              <div class="form__field-block">
+                <label class="form__label" for="phone">Телефон для связи</label>
+                <input class="form__field_required form__field form__field_green" type="text" name="phone" placeholder="89********** или +79**********">
+              </div>
+              <div class="form__field-block">
+                <input class="form__field_required form__checkbox" type="checkbox" name="agreement">
+                <label class="form__label form__check" for="checkbox"><span>Согласие на <a class="link link_underlined btn_popup" href="" data-target="#policy">обработку персональных данных</a></span></label>
+              </div>
+              <input class="form__btn btn btn_green btn_centered" type="submit" value="отправить">
+            </form>
+      </div>
+    </div>
+    <div class="block_white" id="stages">
+      <div class="container"> 
+        <h2 class="heading heading_green">этапы получения доступа</h2>
+        <div class="stages swiper-container">
+          <div class="slider-button-next stages__nav" id="stages-next"></div>
+          <div class="slider-button-prev stages__nav" id="stages-prev"></div>
+          <div class="stages__captions"> 
+            <div class="stages__caption stages__caption_1 stages__caption_1_active">
+              <div class="stages__caption-content"> <span class="stages__caption-number">1 </span><br>купить полис</div>
+            </div>
+            <div class="stages__caption stages__caption_2">
+              <div class="stages__caption-content"> <span class="stages__caption-number"> 2 </span><br>пройти регистрацию</div>
+            </div>
+            <div class="stages__caption stages__caption_3">
+              <div class="stages__caption-content"> <span class="stages__caption-number"> 3 </span><br>получать консультации</div>
+            </div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="stages__item swiper-slide stages__item_active">
+              <div class="stages__item-wrapper">
+                <h3 class="stages__title">доступ оформляется онлайн за 5 минут</h3>
+                <p class="stages__text">Полис придет на вашу электронную почту. Он начнет действовать в течение 3 суток с момента покупки и будет активен 12 месяцев.</p><a class="btn btn_green stages__button" href="big-form">заказать полис</a>
+              </div><img class="stages__img" src="img/stages_1.png" alt="">
+            </div>
+            <div class="stages__item swiper-slide">
+              <div class="stages__item-wrapper">
+                <h3 class="stages__title">регистрация на сайте или в приложении доктор рядом</h3>
+                <p class="stages__text">Пройдите регистрацию на сайте или в приложении «Доктор рядом Телемед». При регистрации необходимо указать данные человека, на которого будет оформлен полис.</p><a class="btn btn_green stages__button" href="big-form">заказать полис</a>
+              </div><img class="stages__img" src="img/stages_2.png" alt="">
+            </div>
+            <div class="stages__item swiper-slide"> 
+              <div class="stages__item-wrapper">
+                <h3 class="stages__title">в любое время — нужен только телефон или доступ в интернет</h3>
+                <p class="stages__text">Полис дает возможность получить неограниченное количество консультаций в любое время. Прочитать, как проводится консультации, можно в разделе <a class="link link_underlined" href="#faq">Частые вопросы</a></p><a class="btn btn_green stages__button" href="big-form">заказать полис</a>
+              </div><img class="stages__img" src="img/stages_3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block_pink" id="specs">
+      <div class="container"> 
+        <h2 class="heading heading_green">доступные специалисты</h2>
+        <div class="specs swiper-container"> 
+          <div class="swiper-wrapper"> 
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_1.jpg" alt="">
+              <h3 class="specs__title">терапевт/педиатр</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_2.jpg" alt="">
+              <h3 class="specs__title">психолог</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_3.jpg" alt="">
+              <h3 class="specs__title">аллерголог-иммунолог</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_4.jpg" alt="">
+              <h3 class="specs__title">гастроэнтеролог</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_5.jpg" alt="">
+              <h3 class="specs__title">гинеколог</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_6.jpg" alt="">
+              <h3 class="specs__title">дерматолог</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_7.jpg" alt="">
+              <h3 class="specs__title">кардиолог</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_8.jpg" alt="">
+              <h3 class="specs__title">лор</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_9.jpg" alt="">
+              <h3 class="specs__title">невролог</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_10.jpg" alt="">
+              <h3 class="specs__title">ортопед</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_11.jpg" alt="">
+              <h3 class="specs__title">травматолог</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_12.jpg" alt="">
+              <h3 class="specs__title">уролог</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+            <div class="specs__item swiper-slide"> <img class="specs__img" src="img/specs_13.jpg" alt="">
+              <h3 class="specs__title">эндокринолог</h3>
+              <p class="specs__text">Ответ в течение  нескольких часов или на следующий день</p>
+            </div>
+          </div>
+          <div class="slider-button-next"></div>
+          <div class="slider-button-prev"></div>
+        </div><a class="btn btn_centered btn_orange btn_popup" data-target="#popup-form">заказать полис</a>
+      </div>
+    </div>
+    <div class="block_white" id="howto">
+      <div class="container"> 
+        <h2 class="heading heading_green">как это работает</h2>
+        <div class="swiper-container howto">
+          <div class="swiper-wrapper"> 
+            <div class="howto__slide swiper-slide">
+              <picture class="howto__picture">
+                <source srcset="img/howto_s_1.jpg" media="(max-width: 767px)">
+                <source srcset="img/howto_1.jpg" media="(min-width: 768px)"><img class="howto__img" src="img/howto_s_1.jpg" alt="">
+              </picture>
+              <div class="howto__links"><a class="howto__link howto__link_appstore" href="https://apps.apple.com/us/app/%D0%B4%D0%BE%D0%BA%D1%82%D0%BE%D1%80-%D1%80%D1%8F%D0%B4%D0%BE%D0%BC-%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%D0%B5%D0%B4/id1293844621" target="blank"></a><a class="howto__link howto__link_google" href="https://play.google.com/store/apps/details?id=ru.drclinics.telemed" target="blank"></a><a class="howto__link howto__link_doctor" href="https://telemed.drclinics.ru/" target="blank"></a></div>
+            </div>
+            <div class="howto__slide swiper-slide">
+              <picture class="howto__picture">
+                <source srcset="img/howto_s_2.jpg" media="(max-width: 767px)">
+                <source srcset="img/howto_2.jpg" media="(min-width: 768px)"><img class="howto__img" src="img/howto_s_2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="howto__slide swiper-slide">
+              <picture class="howto__picture">
+                <source srcset="img/howto_s_3.jpg" media="(max-width: 767px)">
+                <source srcset="img/howto_3.jpg" media="(min-width: 768px)"><img class="howto__img" src="img/howto_s_3.jpg" alt="">
+              </picture>
+            </div>
+            <div class="howto__slide swiper-slide">
+              <picture class="howto__picture">
+                <source srcset="img/howto_s_4.jpg" media="(max-width: 767px)">
+                <source srcset="img/howto_4.jpg" media="(min-width: 768px)"><img class="howto__img" src="img/howto_s_4.jpg" alt="">
+              </picture>
+            </div>
+            <div class="howto__slide swiper-slide">
+              <picture class="howto__picture">
+                <source srcset="img/howto_s_5.jpg" media="(max-width: 767px)">
+                <source srcset="img/howto_5.jpg" media="(min-width: 768px)"><img class="howto__img" src="img/howto_s_5.jpg" alt="">
+              </picture>
+            </div>
+            <div class="howto__slide swiper-slide">
+              <picture class="howto__picture">
+                <source srcset="img/howto_s_6.jpg" media="(max-width: 767px)">
+                <source srcset="img/howto_6.jpg" media="(min-width: 768px)"><img class="howto__img" src="img/howto_s_6.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="slider-button-prev"></div>
+          <div class="slider-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <div class="block_pink" id="big-form">
+      <div class="container"> 
+        <h2 class="heading heading_green">форма заявки</h2>
+        <div class="big-form__wrapper">
+          <div id="app"></div>
+        </div>
+      </div>
+    </div>
+    <div class="block_white">
+      <div class="container"> 
+        <h2 class="heading heading_green">частые вопросы</h2>
+        <div class="faq"> 
+          <div class="faq__item"> 
+            <div class="faq__title">Что такое телемедицина?</div>
+            <div class="faq__content"> 
+              <p>Телемедицина – это консультации с сертифицированными врачами высшей категории, не выходя из дома, из любой точки мира, с помощью телефона или компьютера.</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__title">В каком формате возможна дистанционная консультация с врачом?</div>
+            <div class="faq__content"> 
+              <p>Консультации предоставляются в трех форматах, удобных для клиента – через <b>сайт </b>«Доктор рядом» <a href="https://telemed.drclinics.ru">https://telemed.drclinics.ru, </a><b>мобильное приложение </b>или через <b>телефон </b><span>колл-центра 8-800-550-6979 (для звонков по России бесплатно), +7 (495) 266-39-52 (для звонков из-за рубежа). К медицинскому психологу необходимо обратиться по круглосуточному бесплатному федеральному телефону СПАО «Ингосстрах» 8-800-2003-911.</span></p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__title">Какое ключевое преимущество телемедицинской консультации в Телемед Полис?</div>
+            <div class="faq__content"> 
+              <ul> 
+                <li>Конкурентная стоимость продукта при неограниченном количестве обращений</li>
+                <li>Получение круглосуточной дистанционнойконсультативной поддержки дежурных врачей (терапевт/педиатр) и узких врачей-специалистов в режиме работы клиник</li>
+                <li>Получение поддержки медицинского психолога</li>
+                <li>Получение консультации - альтернативное мнение</li>
+                <li>Получение консультации у терапевта/педиатра через <b>1,5 минуты после обращения</b></li>
+                <li>Сохранение медицинской документации в приложении.</li>
+                <li>Просмотр истории консультаций и рекомендаций врачей в приложении.</li>
+                <li>Возможность познакомиться с системой ДМС на примере доступного и понятного продукта.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__title">К врачу какой специальности можно обратиться?</div>
+            <div class="faq__content"> 
+              <p>По программе можно получить консультацию следующих узких врачей-специалистов: кардиолог, невролог, гастроэнтеролог, эндокринолог, гинеколог, уролог, дерматолог, ЛОР, аллерголог-иммунолог, травматолог-ортопед.</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__title">Назначает ли врач лечение после консультации?</div>
+            <div class="faq__content"> 
+              <p>Врач может дать разъяснения по ранее поставленному диагнозу и назначенному лечению, интерпретировать результаты анализов и инструментальных исследований, дать рекомендации по профилактике и здоровому образу жизни. Врач обсуждает состояние здоровья Застрахованного и может принять решение о необходимости экстренной и неотложной помощи</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__title">По какому графику работают врачи?</div>
+            <div class="faq__content"> 
+              <p>Дежурный терапевт/педиатр, медицинский психолог работают по графику 24/7, на консультацию к узкому врачу-специалисту можно записаться через мобильное приложение/сайт, выбрав удобное время в режиме работы клиник «Доктор рядом».</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__title">Где возможно ознакомиться с информацией о врачах клиники «Доктор рядом»?</div>
+            <div class="faq__content"> 
+              <p>Информацию о докторе можно увидеть в мобильном приложении или на сайте «Доктор рядом», выбрав врача. Информация представлена в виде: описания опыта, образования, курсов повышения квалификации. Также в разделе каждого доктора можно увидеть дипломы и сертификаты, подтверждающие квалификацию врача.</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__title">Сколько застрахованных лиц можно включить в полис?</div>
+            <div class="faq__content"> 
+              <p>В одном договоре возможно указание только одного застрахованного лица.</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__title">Как врач по звонку определит, что я являюсь застрахованным по программе?</div>
+            <div class="faq__content"> 
+              <p>В информационной системе отображается программа обслуживания, врач ее видит и может понять, от какой организации обращается клиент. При обращении на линию за консультацией проводится идентификация по персональным данным Пациента.</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__title">Чем регулируется конфиденциальность анализов и переговоров с врачом?</div>
+            <div class="faq__content"> 
+              <p>Конфиденциальность      регламентируется      следующими      законами:      152-ФЗ      «Об    обработке персональных    данных»,      Законом      242-ФЗ,      регламентирующим      порядок      предоставления телемедицинских услуг, 149-ФЗ "Об информации, информационных технологиях и о защите информации". Доктор увидит сообщения и направленные документы (анализы, заключения) только во время осуществления консультации.</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__title">Каковы медицинские исключения из программы? </div>
+            <div class="faq__content"> 
+              <ul> 
+                <li>Не покрывается выдача всех видов медицинской документации</li>
+                <li>Не оплачиваются услуги консультации врачей, не предусмотренных программой.</li>
+                <li>Не оплачиваются медицинские услуги, связанные с определенными заболеваниями и их осложнениями (перечень заболеваний и осложнений указан в программе).</li>
+              </ul>
+              <p>Полный перечень исключений указан в программе.</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__title">Можно ли приобрести полис в подарок, указать застрахованным иное лицо?</div>
+            <div class="faq__content"> 
+              <p>Да, возможно приобретение полиса с указанием страхователем лица, оплатившего договор и застрахованным другого лица.</p>
+            </div>
+          </div>
+        </div><a class="btn btn_green btn_centered btn_popup" data-target="#popup-form">заказать полис</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container"> 
+        <div class="footer__wrapper"><img class="footer__logo" src="img/logo.svg" alt="med-tele.ru">
+          <ul class="footer__menu">
+            <li class="footer__menu-item"> <a class="footer__menu-link link btn_popup" href="" data-target="#policy">Политика конфиденциальности</a></li>
+            <li class="footer__menu-item"> <a class="footer__menu-link link" href="https://apps.apple.com/us/app/%D0%B4%D0%BE%D0%BA%D1%82%D0%BE%D1%80-%D1%80%D1%8F%D0%B4%D0%BE%D0%BC-%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%D0%B5%D0%B4/id1293844621">Скачать приложение в App Store</a></li>
+            <li class="footer__menu-item"> <a class="footer__menu-link link" href="https://play.google.com/store/apps/details?id=ru.drclinics.telemed">Скачать приложение в Google Play</a></li>
+            <li class="footer__menu-item"> <a class="footer__menu-link link">Лицензия</a></li>
+          </ul>
+          <ul class="footer__menu footer__company-details"> 
+            <li class="footer__menu-item">Телемед Полис</li>
+            <li class="footer__menu-item">Санкт-Петербург, Казанская ул., 52</li>
+            <li class="footer__menu-item"></li>
+            <li class="footer__menu-item"></li>
+          </ul>
+          <div class="footer__contacts-wrapper">
+                <ul class="contacts"> 
+                  <li class="contacts__item contacts__item_phone"><a class="link" href="tel:78009447129">8 (800) 944-71-29 </a></li>
+                  <li class="contacts__item"><a class="link" href="mailto:key@med-tele.ru">key@med-tele.ru</a></li>
+                  <li class="contacts__item contacts__item_insta"><a class="link" href="">meditel</a></li>
+                </ul><span class="footer__copyright">(c) Телемед 2021</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="mask" id="mask"></div>
+    <div class="scroller" id="scroller"></div>
+    <div class="popup" id="popup-form">
+      <div class="btn btn_close" id="popup-close"></div>
+          <h2 class="heading heading_orange">получить консультацию</h2>
+          <form class="form" action="">
+            <div class="form__field-block">
+              <label class="form__label" for="name">Ваше имя</label>
+              <input class="form__field_required form__field form__field_green" type="text" name="name" placeholder="Иванов Иван Иванович">
+            </div>
+            <div class="form__field-block">
+              <label class="form__label" for="phone">Телефон для связи</label>
+              <input class="form__field_required form__field form__field_green" type="text" name="phone" placeholder="89********** или +79**********">
+            </div>
+            <div class="form__field-block">
+              <input class="form__field_required form__checkbox" type="checkbox" name="agreement">
+              <label class="form__label form__check" for="checkbox"><span>Согласие на <a class="link link_underlined btn_popup" href="" data-target="#policy">обработку персональных данных</a></span></label>
+            </div>
+            <input class="form__btn btn btn_green btn_centered" type="submit" value="отправить">
+          </form>
+    </div>
+    <div class="popup" id="thankyou">
+      <div class="btn btn_close" id="popup-close"></div>
+      <div class="text-wrapper">
+        <p class="text_center">Спасибо за заполнение формы! Мы свяжемся с Вами в ближайшее время!</p>
+      </div>
+    </div>
+    <div class="popup" id="policy"> 
+      <div class="btn btn_close" id="popup-close"></div>
+      <div class="policy">  
+        <h2 class="heading heading_2 heading_orange">Политика обработки персональных данных</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </body>
+  <script src="js/chunk-vendors.1cfbd55d.js"></script>
+  <script src="js/app.75b8c8f2.js"></script>
+</html>

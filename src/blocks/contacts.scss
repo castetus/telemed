@@ -1,11 +1,13 @@
 @import '../scss/variables.scss';
 .contacts{
+  display: flex;
+  flex-direction: column;
   text-align: center;
   list-style-type: none;
   padding-left: 0;
   color: $color-green;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 16px;
   margin-top: 16px;
   &__item{
@@ -22,6 +24,9 @@
         width: 15px;
         height: 15px;
       }
+      // @media screen and (min-width: $tablets){
+      //   order: 3;
+      // }
     }
     &_insta{
       padding-left: 14px;
@@ -30,15 +35,21 @@
         background: url('img/icons/instagram.svg') center no-repeat;
         background-size: contain;
         position: absolute;
-        left: 65px;
-        top: 3px;
+        left: 33px;
+        top: 0;
         width: 13px;
         height: 13px;
+        @media screen and (min-width: $tablets){
+          left: 60px;
+        }
       }
     }
+    // @media screen and (min-width: $tablets){
+    //   line-height: 20px;
+    // }
   }
   @media screen and (min-width: $tablets) {
     text-align: right;
-    margin-left: 108px;
+    margin-left: 10px;
   }
 }
