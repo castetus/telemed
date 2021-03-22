@@ -1,0 +1,15 @@
+mixin form(title)
+  h2.heading.heading_orange= title
+  form.form(action="")
+    .form__field-block
+      label.form__label(for="name") Ваше имя
+      input.form__field_required.form__field.form__field_green(type="text" name="name" placeholder="Иванов Иван Иванович")
+    .form__field-block
+      label.form__label(for="phone") Телефон для связи
+      input.form__field_required.form__field.form__field_green(type="text" name="phone" placeholder="89********** или +79**********")
+    .form__field-block.form__field-block_check
+      input.form__field_required.form__checkbox(type="checkbox" name="agreement")
+      label.form__label.form__check(for="checkbox")
+        span Согласие на 
+          a.link.link_underlined.btn_popup(href="" data-target="#policy") обработку персональных данных
+    input.form__btn.btn.btn_green.btn_centered(type="submit" value="отправить") 

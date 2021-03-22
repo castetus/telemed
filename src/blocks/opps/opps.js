@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
     return
   }
   const oppsSlider = new Swiper('.opps__slider', {
+    loop: true,
     navigation: {
       nextEl: '.slider-button-next',
       prevEl: '.slider-button-prev',

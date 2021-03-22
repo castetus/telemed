@@ -15,12 +15,13 @@ document.addEventListener('DOMContentLoaded', function(){
           captions[i].classList.add(activeClassName)
           stagesSlider.slideTo(i, 1000)
         })
-      }
+      } 
   } else {
     stagesSlider.on('activeIndexChange', function(){
       let index = stagesSlider.activeIndex
+      console.log(index)
       removeActiveClass()
-      let activeClassName = 'stages__caption_' + (index+1) + '_active'
+      let activeClassName = 'stages__caption_' + (index + 1) + '_active'
       captions[index].classList.add(activeClassName)
     })
   }

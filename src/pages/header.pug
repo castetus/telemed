@@ -4,7 +4,13 @@ header
   .container 
     .header 
       +logo
+      h2.heading_green.header__slogan Консультируйтесь с 
+        br 
+        | профессиональными врачами 24/7 
+        br 
+        | без ожидания и очередей!
       .header__cta 
-        a.btn.btn_outlined.btn_centered заказать полис
+        a.btn.btn_outlined.btn_centered.btn_popup(data-target="#popup-form") заказать полис
+        //- span.header__note Бесплатный звонок по России
       +contacts
       button.header__menu-button#dropdown

@@ -27,4 +27,18 @@
     margin-bottom: 7px;
     color: $color-grey;
   }
+  &__contacts-wrapper{
+    height: 100%;
+    font-size: 12px;
+  }
+  &__contacts-wrapper .contacts{
+    font-size: 12px;
+  }
+  &__copyright{
+    font-size: 12px;
+    font-weight: 600;
+    color: $color-green;
+    float: right;
+    margin-top: -10px;
+  }
 }

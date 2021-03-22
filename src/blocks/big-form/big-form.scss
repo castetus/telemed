@@ -1,0 +1,9 @@
+@import '../../scss/variables.scss';
+.big-form{
+  &__wrapper{
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid $color-light-grey;
+  }
+}

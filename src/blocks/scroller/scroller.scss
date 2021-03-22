@@ -1,0 +1,58 @@
+@import '../../scss/variables.scss';
+.scroller{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s linear;
+  z-index: 20;
+  bottom: 30px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid $color-orange;
+  cursor: pointer;
+  &_visible{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s linear;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    background: url('img/icons/up-orange.svg') center no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    bottom: 8px;
+    left: 4px;
+    @media screen and (min-width: $tablets) {
+      height: 30px;
+      width: 30px;
+      left: 5px;
+      bottom: 10px;
+    }
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    background: url('img/icons/up-green.svg') center no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 1px;
+    @media screen and (min-width: $tablets) {
+      height: 30px;
+      width: 30px;
+      left: 5px;
+      bottom: 1px;
+    }
+  }
+  @media screen and (min-width: $tablets) {
+    bottom: 50px;
+    left: 50px;
+    height: 40px;
+    width: 40px;
+  }
+}
